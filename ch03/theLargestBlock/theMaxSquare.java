@@ -39,7 +39,9 @@ public class theMaxSquare {
                             //正好利用这个异常跳出循环
                             if (!(Square[row + size][col + i] == 0) && !(Square[row + i][col + size] == 0))
                                 size += 1;
-                    } finally {
+                    } catch(java.lang.ArrayIndexOutOfBoundsException e) {
+                    		//吞了吞了
+                    }finally {
                         if(size > result[2]) {
                             result[0] = row + 1;
                             result[1] = col + 1;
