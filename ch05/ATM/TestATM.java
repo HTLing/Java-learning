@@ -11,6 +11,7 @@ public class TestATM {
         ATM myATM = new ATM();
         Scanner input = new Scanner(System.in);
         while(true) {
+            //算了算了这个死循环就这样吧
             int choice = myATM.MainMenu();
             switch (choice) {
                 case 1 -> System.out.printf("您的余额为：%.2f。\n\n", myATM.getBalance());
