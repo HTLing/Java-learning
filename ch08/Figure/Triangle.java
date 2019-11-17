@@ -68,14 +68,6 @@ public class Triangle extends GeometricObject {
     }
 }
 
-/**
- * 表示三角形不合法的异常
- * <p>
- *     编号1： 输入参数过少
- *     编号2： 输入参数过多
- *     编号3： 边长不符合三角形构成的条件
- * </p>
- */
 class IllegalTriangleException extends Exception {
     IllegalTriangleException(String s) {
         super(s);
